@@ -1,7 +1,7 @@
 window.onload = function () {
-    // alert("ingresando a la aplicacion");
+     alert("Usted Recargo la pagina");
 };
 
-function otraFuncion() {
-    console.log("mensaje desde otra funcion");
+function recargarPagina() {
+    location.reload();
 }
