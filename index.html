@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <h1>Hola Mundo</h1>
+    <h1>Tarea de "programacion 2" </h1>
     <hr>
     <h2>Mi primer página web con JavaScript</h2>
     
@@ -21,11 +21,23 @@
             Tarea: usar JavaScript para manipular el DOM (mostrar, ocultar, recargar, agregar texto, eliminar elementos, seleccionar elementos, aplicar estilos, quitar estilos, manejo de errores con try/catch, validación de variables). vista en el videotutorial del catedrático el cual se encuentra en el siguiente link:
         </p>
     </h3>
-    <h3>Video de referencia:</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/14LCKZJa4wQ?si=FD7KX8dAOvkKaA1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h3>Video de referencia:</h3><hr>
+
+    <button onclick="mostrarVideo()">Mostrar video</button>
+    <button onclick="ocultarVideo()">Ocultar Video</button>
+
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/14LCKZJa4wQ?si=FD7KX8dAOvkKaA1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <hr>
+
+     <div id="caja">Soy una caja de ejemplo</div>
 
     <br>    
+    
+    <button onclick="mostrar()">Mostrar</button>
+    <button onclick="ocultar()">Ocultar</button>
     <button onclick="recargarPagina()">Recargar Página</button>
 
+    <hr>
+    <button onclick="Creador()">Mostrar creador de la pagina "por consola"</button>
 </body>
 </html>
