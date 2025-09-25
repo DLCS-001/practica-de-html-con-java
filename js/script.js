@@ -1,5 +1,5 @@
 window.onload = function () {
-     alert("Usted Recargo la pagina");
+    alert("Usted recargó la página");
 };
 
 function recargarPagina() {
