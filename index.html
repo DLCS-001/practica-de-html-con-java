@@ -20,24 +20,40 @@
         <p>
             Tarea: usar JavaScript para manipular el DOM (mostrar, ocultar, recargar, agregar texto, eliminar elementos, seleccionar elementos, aplicar estilos, quitar estilos, manejo de errores con try/catch, validación de variables). vista en el videotutorial del catedrático el cual se encuentra en el siguiente link:
         </p>
-    </h3>
-    <h3>Video de referencia:</h3><hr>
+    
+    <h3>Video de referencia:</h3>
 
     <button onclick="mostrarVideo()">Mostrar video</button>
     <button onclick="ocultarVideo()">Ocultar Video</button>
+    <br>
 
-    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/14LCKZJa4wQ?si=FD7KX8dAOvkKaA1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe id="video" class="oculto" width="560" height="315" src="https://www.youtube.com/embed/14LCKZJa4wQ?si=FD7KX8dAOvkKaA1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <hr>
 
      <div id="caja">Soy una caja de ejemplo</div>
-
-    <br>    
+     <br>
+ 
     
     <button onclick="mostrar()">Mostrar</button>
     <button onclick="ocultar()">Ocultar</button>
+    
     <button onclick="recargarPagina()">Recargar Página</button>
 
     <hr>
     <button onclick="Creador()">Mostrar creador de la pagina "por consola"</button>
+<hr>
+<br>
+    <input type="text" name="cajaTexto" id="cajaTexto">
+    <button onclick="agregarTextoEnConsola()">Agregar texto</button>
+<hr>
+<br>
+
+<div id="contenedor">
+
+
+</div>
+
+</div>
+<button onclick="crearElementosEnEjecucion()">Crear Elementos</button>
 </body>
 </html>

@@ -1,6 +1,9 @@
 
 window.onload = function () {
     alert("Usted recargó la página");
+    // Ocultar video al cargar la página
+    var video = document.getElementById("video");
+    if(video) video.classList.add("oculto");
 };
 
 function recargarPagina() {
@@ -16,11 +19,13 @@ function ocultar() {
 }
 
 function mostrarVideo() {
-    document.getElementById("video").style.display = "block";
+    var video = document.getElementById("video");
+    if(video) video.classList.remove("oculto");
 }
 
 function ocultarVideo() {
-    document.getElementById("video").style.display = "none";
+    var video = document.getElementById("video");
+    if(video) video.classList.add("oculto");
 }
 
 function Creador() {
@@ -38,4 +43,17 @@ function Creador() {
 
 function funcionAnidas(objeto) {
     console.log(objeto.nombre);
+}
+
+function agregarTextoEnConsola() {
+    let elemento=document.getElementById("cajaTexto").value;
+    console.log(elemento);
+}
+
+function crearElementosEnEjecucion() {
+    let e=document.createElement("div");
+    let conteiner = document.getElementById("contenedor");
+    e.append("Hola, soy un elemento creado en tiempo de ejecución");
+    conteiner.appendChild(e);
+    console.log(e);
 }

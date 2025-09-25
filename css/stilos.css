@@ -57,3 +57,44 @@ button:hover {
 	font-weight: bold;
 	border: 2px solid red;
 }
+
+#video {
+	margin: 20px auto;
+	border: 4px solid #4078c0;
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+	display: block;
+}
+#video.oculto {
+	display: none;
+}
+#caja.oculto {
+	display: none;
+}
+input[type="text"] {
+	padding: 10px;
+	font-size: 1em;
+	border: 2px solid #ccc;
+	border-radius: 6px;
+	width: 200px;
+	margin-right: 10px;
+	box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+input[type="text"]:focus {
+	border-color: #4078c0;
+	outline: none;
+	box-shadow: 0 0 8px rgba(64,120,192,0.3);
+}
+hr {
+	border: none;
+	height: 1px;
+	background: #ccc;
+	margin: 30px 0;
+}
+#cajaTexto {
+	width: 300px;
+}
+#cajaTexto.resaltado {
+	border-color: red;
+	background: #ffe6e6;
+}
