@@ -1,4 +1,5 @@
-
+var indice = 0;
+var indice2 = 0;
 window.onload = function () {
     alert("Usted recargó la página");
     // Ocultar video al cargar la página
@@ -51,9 +52,45 @@ function agregarTextoEnConsola() {
 }
 
 function crearElementosEnEjecucion() {
-    let e=document.createElement("div");
-    let conteiner = document.getElementById("contenedor");
-    e.append("Hola, soy un elemento creado en tiempo de ejecución");
-    conteiner.appendChild(e);
-    console.log(e);
+    let e = document.createElement("div");
+    let e2 = document.createElement("input");
+    let contenedor = document.getElementById("contenedor");
+    e.textContent = "Hola, soy un elemento creado en tiempo de ejecución";
+    e2.setAttribute("type", "text");
+    e2.setAttribute("value", "Elemento Creado En Ejecucion");
+    if (contenedor) {
+        contenedor.appendChild(e);
+        contenedor.appendChild(e2);
+    }
+}
+
+function eliminarElementosEnEjecucion() {
+    let contenedor = document.getElementById("contenedor");
+    if (contenedor) {
+        contenedor.innerHTML = "";
+    }
+}
+
+function agregarTexto() {
+    try {
+        let texto = prompt("Ingrese un texto:");
+        if (texto === null || texto.trim() === "") {
+            throw "Debe ingresar un texto válido";
+        }
+        document.getElementById("caja").innerHTML += "<p>" + texto + "</p>";
+    } catch (error) {
+        alert("Error: " + error);
+    }
+}
+
+function eliminarTexto() {
+    document.getElementById("caja").innerHTML = "";
+}
+
+function aplicarEstilo() {
+    document.getElementById("caja").classList.add("resaltado");
+}
+
+function quitarEstilo() {
+    document.getElementById("caja").classList.remove("resaltado");
 }

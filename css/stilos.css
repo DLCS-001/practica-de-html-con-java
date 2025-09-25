@@ -98,3 +98,50 @@ hr {
 	border-color: red;
 	background: #ffe6e6;
 }
+
+#contenedor {
+	margin-top: 20px;
+}
+#contenedor .elemento-creado {
+	background: #f0f0f0;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin: 5px auto;
+	width: 220px;
+	border-radius: 6px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+#contenedor .elemento-creado input[type="text"] {
+	width: calc(100% - 20px);
+	margin-top: 10px;
+}
+#contenedor .elemento-creado input[type="text"]:focus {
+	border-color: #4078c0;
+	box-shadow: 0 0 8px rgba(64,120,192,0.3);
+}
+#contenedor .elemento-creado:nth-child(odd) {
+	background: #e8e8e8;
+}
+#contenedor .elemento-creado:nth-child(even) {
+	background: #f9f9f9;
+}
+#contenedor .elemento-creado:hover {
+	background: #dcdde1;
+}
+#contenedor .elemento-creado.oculto {
+	display: none;
+}
+#contenedor .elemento-creado.resaltado {
+	border-color: red;
+	background: #ffe6e6;
+}
+#contenedor .elemento-creado.resaltado:hover {
+	background: #ffcccc;
+}
+#contenedor .elemento-creado .boton-eliminar {
+	background: #e84118;
+	margin-top: 10px;
+}
+#contenedor .elemento-creado .boton-eliminar:hover {
+	background: #c23616;
+}
